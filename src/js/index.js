@@ -1,3 +1,4 @@
+import { data } from 'autoprefixer';
 import '../scss/main.scss';
 
 // uncomment the lines below to enable PWA
@@ -9,7 +10,7 @@ registerSW();
 const glassCounter = document.querySelector('.glass__counter--js');
 const buttonAdd = document.querySelector('.button__add--js');
 const buttonRemove = document.querySelector('.button__remove--js');
-const key = new date().toISOString().slice(0, 10);
+const key = new Date().toISOString().slice(0, 10);
 
 let currentGlassCounter = 0;
 
@@ -21,16 +22,19 @@ if (localStorageValue) {
     localStorage.setItem(key, 0);
 }
 
+glassCounter.innerHTML = currentGlassCounter;
 
 
 buttonAdd.addEventListener('click', () => {
     currentGlassCounter++;
     glassCounter.innerHTML = currentGlassCounter;
+    localStorage.setItem(key, currentGlassCounter);
 })
 
 buttonRemove.addEventListener('click', () => {
     if (currentGlassCounter > 0) {
-        currentGlassCounter--;   
+        currentGlassCounter--;
+        localStorage.setItem(key, currentGlassCounter);   
     }
     glassCounter.innerHTML = currentGlassCounter;
 })
