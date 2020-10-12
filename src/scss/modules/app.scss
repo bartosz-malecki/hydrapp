@@ -41,7 +41,8 @@
     line-height: 64px;
     margin: 0 0 64px;
     text-align: center;
-    -webkit-animation: puff-in-center 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation: puff-in-center 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-shadow: 2px 3px 2px rgb(0 0 0 / 86%);
+    -webkit-animation: puff-in-center 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: puff-in-center 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
