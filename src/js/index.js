@@ -38,3 +38,11 @@ buttonRemove.addEventListener('click', () => {
     }
     glassCounter.innerHTML = currentGlassCounter;
 })
+
+var button = document.getElementById('app__title__animated');
+  
+function startAnimation() {
+    button.classList.toggle('app__title');
+}
+  
+button.addEventListener("click", startAnimation, false)
