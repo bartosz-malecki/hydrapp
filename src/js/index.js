@@ -39,10 +39,16 @@ buttonRemove.addEventListener('click', () => {
     glassCounter.innerHTML = currentGlassCounter;
 })
 
+let removeClass = true;
 const changeButton = document.querySelector('.button__add--js');
 
 changeButton.addEventListener('click', () => {
-    const newAddButton = document.querySelector('.button__add--js');
-    newAddButton.classList.remove('button__add--js');
+    
+    if (removeClass) {
+        const newAddButton = document.querySelector('.button__add--js');
+        newAddButton.classList.remove('button__add--js');
+        removeClass = false;
+    }
 })
+
 
