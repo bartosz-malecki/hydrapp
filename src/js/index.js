@@ -43,6 +43,6 @@ const changeButton = document.querySelector('.button__add--js');
 
 changeButton.addEventListener('click', () => {
     const newAddButton = document.querySelector('.button__add--js');
-    newAddButton.classList.toggle('button__new--js');
+    newAddButton.classList.remove('button__add--js');
 })
 
