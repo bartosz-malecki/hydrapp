@@ -84,7 +84,7 @@
   }
 }
 
-.button__add {
+.button__add--js {
   display: block;
   margin: 0 auto 16px;
   width: 216px;
@@ -100,11 +100,9 @@
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     0.5s both;
   animation: slide-in-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both;
-  
-}
+  }
 
-
-.button__change--js {
+.button__new--js {
   display: block;
   margin: 0 auto 16px;
   width: 216px;
